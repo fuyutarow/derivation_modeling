@@ -1,3 +1,18 @@
+# Derivation Medeling
+
+## Installation
+```
+pip install git+https://github.com/fytroo/derivation_modeling.git
+```
+
+### Usage 
+```python
+from derivation.codegen import expr_to_py
+
+x = symbols('x')
+expr_to_py()(5**exp(-x)).to_string()
+# => '5 * math.exp(-x)'
+```
 
 Running the examples
 --------------------
